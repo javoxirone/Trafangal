@@ -1,0 +1,27 @@
+@mixin header($display, $jc, $ai) {
+    display: $display;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+
+
+@mixin header_1($display, $jc, $ai, $fd) {
+    display: $display;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-direction: $fd;
+}
+
+@mixin main($display, $jc, $ai) {
+    display: $display;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+@mixin main_1($display, $jc, $ai, $fd) {
+    display: $display;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-direction: $fd;
+}

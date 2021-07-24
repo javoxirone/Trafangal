@@ -1,0 +1,256 @@
+@import 'mixin.scss';
+@import 'variable.scss';
+
+section#home{
+    background-image: url("../img/element2.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+.home-article{
+    max-width: 445px;
+    
+}
+h2.home-title{
+    color: black; 
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+p.home-article{
+    width: 100%;
+    color: $color2;
+    font-weight: 300;
+    line-height: 32px;
+    margin-bottom: 45px;
+}
+
+.home-img{
+    max-width: 774px;
+    @media (max-width: 767px) {
+        margin-top: 40px;
+    }
+    img{
+        width: 100%;
+    }
+}
+
+
+section.services{
+    background-image: url("../img/bg.png");
+    background-repeat: no-repeat;
+}
+.services-title{
+    margin-bottom: 80px;
+}
+.services-content{
+    margin-bottom: 72px;
+}
+.cart{
+    background-color: #fff;
+    max-width: 350px;
+    height: auto;
+    padding: 35px 55px;
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+    border-radius: 20px;
+    @media (max-width: 767px) {
+        margin-bottom: 40px;
+        
+    }
+    img{
+        margin-bottom: 22px;
+    }
+    h4.cart-title{
+        margin-bottom: 22px;
+    }
+    p{
+        text-align: left;
+        line-height: 28px;
+        margin: 0;
+    }
+}
+
+
+.block{
+    @media (max-width: 767px) {
+        @include main_1(flex, center, center, column);
+        
+    }
+}
+
+
+section.about{
+    background-image: url("../img/element.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.about-doctor{
+    @include main(flex, space-between, center);
+    margin-bottom: 265px;
+    @media (max-width: 767px) {
+        @include main_1(flex, space-between, center, column);
+        margin-bottom: 150px;
+    }
+}
+.about-app{
+    @include main(flex, space-between, center);
+    @media (max-width: 767px) {
+        @include main_1(flex, space-between, center, column);
+    }
+}
+.about-img{
+    max-width: 650px;
+    img{
+        width: 100%;
+    }
+    @media (max-width: 767px) {
+        margin-bottom: 40px;
+    }
+}
+
+.about-article{
+    max-width: 450px;
+    p{
+        margin-bottom: 37px;
+    }
+    @media (max-width: 767px) {
+        margin-bottom: 40px;
+    }
+}
+
+.about-doctor__title{
+    margin-bottom: 31px;
+}
+
+
+.comments-block{
+    max-width: 100%;
+    height: 425px;
+    border-radius: 24px;
+    padding: 65px 120px;
+    background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+    position: relative;
+    @media (max-width: 767px) {
+        height: 800px;
+        padding: 30px;
+        text-align: center;
+    }
+}
+
+.comments-title{
+    margin-bottom: 66px;
+    h3{
+        color: #fff;
+    }
+}
+
+.comments-profile__title{
+    margin-left: 30px;
+}
+.profile__title_name{
+    color: #fff;
+}
+.profile__title_job{
+    color: #fff;
+}
+
+.block_2{
+    max-width: 420px;
+    p{
+        text-align: left;
+    }
+}
+
+
+
+.swiper-button-prev::after,
+.swiper-button-next::after{
+    color: $color1;
+    position: absolute;
+    top: 260px;
+    @media (max-width: 991px) {
+        display: none;        
+    }
+    
+}
+
+.swiper-button-prev::after{
+    right: -400px;
+}
+.swiper-button-next::after{
+    left: -400px;
+}
+
+.swiper-pagination{
+    width: 80%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: -60px;
+    @media (max-width: 991px) {
+        display: none;        
+    }
+}
+.swiper-pagination-bullet{
+    margin-right: 10px;
+}
+
+.comments-profile{
+    @include main(flex, flex-start, center);
+    @media (max-width: 767px) {
+        @include main_1(flex, center, center, column);
+        margin-bottom: 20px;
+    }
+}
+.slide{
+    @include main(flex, space-between, center);
+    @media (max-width: 767px) {
+        @include main_1(flex, center, center, column);
+    }
+}
+.element3{
+    position: absolute;
+    bottom: 10px;
+    left: -50px;
+    z-index: -1;
+}
+.element4{
+    position: absolute;
+    top: 0;
+    right: 0px;
+}
+
+
+
+section.blog{
+    background-image: url("../img/bg2.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.card-deck{
+    margin-bottom: 70px;
+}
+.card{
+    background: #FFFFFF;
+/* drop shadow */
+
+box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+border-radius: 20px;
+border: none;
+max-width: 350px;
+
+}
+
+.card-body{
+    padding: 33px 35px;
+}
+.card-text{
+    color: $color2;
+}
+i.fas{
+    margin-left: 10px;
+    color: $color1;
+}
+.text-muted{
+    a{
+        color: $color1;
+        font-size: 14px;
+    }
+}

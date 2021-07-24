@@ -1,0 +1,43 @@
+@import 'mixin.scss';
+@import 'variable.scss';
+
+
+footer.footer{
+    position: relative;
+    background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+    padding: 120px 190px;
+    @media (max-width: 767px) {
+        padding: 20px;
+    }
+    z-index: 1000;
+    color: #fff;
+}
+
+li{
+    font-weight: 300;
+    margin-bottom: 20px;
+    a{
+        color: white;
+    }
+}
+li.active{
+    font-weight: 700;
+}
+
+.footer-content{
+    @include main(flex, space-between, center);
+    @media (max-width: 767px) {
+        @include main_1(flex, center, center, column);
+    }
+}
+.foot1{
+    position: absolute;
+    top: -72px;
+    right: 90px;
+    z-index: -1000;
+}
+.foot2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}

@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import 'mixin.scss';
+@import 'variable.scss';
+@import 'header.scss';
+@import 'main.scss';
+@import 'footer.scss';
+// font-family: 'Poppins', sans-serif;
+body{
+    font-family: 'Mulish', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: black;
+    &.active{
+        overflow: hidden;
+    }
+}
+
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none!important;
+    color: black;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700;
+}
+
+h1{
+    font-size: $fzH1;
+}
+h2{
+    
+    font-size: $fzH2;
+}
+h3{
+    font-size: $fzH3;
+}
+h6{
+    font-size: $fzH6;
+}
+h4{
+    font-size: $fzH4;
+}
+
+.button{
+    padding: 10px 40px;
+    background: $color1;
+    border-radius: 55px;
+    border: none;
+    a{
+        color: #fff;
+    }
+    
+    font-weight: 700;
+}
+.button-brd{
+    padding: 10px 40px;
+    border: 1.4px solid $color1;
+    background: transparent;
+    border-radius: 55px;
+    font-weight: 700;
+    transition: 0.3s;
+    a{
+        color: $color1;
+    }
+    &:hover{
+        background-color: $color1;
+        a{
+            color: #fff;
+        }
+    }
+    
+}
+section{
+    padding: 120px 0px;
+}
+
+.article{
+    width: 100%;
+    color: $color2;
+    font-weight: 300;
+    line-height: 32px;
+    text-align: center;
+}
